@@ -19,7 +19,7 @@ public class EarnyPlugin extends Plugin implements IPlugin {
         this.factory = new PluginFactory(new JavaLoggerImplementation(this.getLogger()), this);
         this.factory.run();
         Metrics metrics = new Metrics(this);
-        this.getLogger().info("Initialized bStats metrics.");
+        this.getLogger().info("Initialised bStats metrics.");
 
         this.getProxy().getPluginManager().registerListener(this, new ChatListener(this));
         this.getProxy().getPluginManager().registerCommand(this, new ShortUrlCommand(this));
